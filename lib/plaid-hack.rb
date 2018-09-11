@@ -1,27 +1,27 @@
-require 'plaid/version'
-require 'plaid/errors'
-require 'plaid/connector'
-require 'plaid/category'
-require 'plaid/institution'
-require 'plaid/user'
-require 'plaid/transaction'
-require 'plaid/info'
-require 'plaid/income'
-require 'plaid/client'
-require 'plaid/webhook'
+require 'plaid-hack/version'
+require 'plaid-hack/errors'
+require 'plaid-hack/connector'
+require 'plaid-hack/category'
+require 'plaid-hack/institution'
+require 'plaid-hack/user'
+require 'plaid-hack/transaction'
+require 'plaid-hack/info'
+require 'plaid-hack/income'
+require 'plaid-hack/client'
+require 'plaid-hack/webhook'
 
 require 'uri'
 
-# Public: The Plaid namespace.
-module Plaid
-  # Public: Available Plaid products.
+# Public: The PlaidHack namespace.
+module PlaidHack
+  # Public: Available PlaidHack products.
   PRODUCTS = %i(connect auth info income risk).freeze
 
   class <<self
     # Public: The default Client.
     attr_accessor :client
 
-    # Public: The Integer read timeout for requests to Plaid HTTP API.
+    # Public: The Integer read timeout for requests to PlaidHack HTTP API.
     # Should be specified in seconds. Default value is 120 (2 minutes).
     attr_accessor :read_timeout
 
@@ -31,9 +31,9 @@ module Plaid
     #
     # Examples
     #
-    #   Plaid.configure do |p|
-    #     p.client_id = 'Plaid provided client ID here'
-    #     p.secret = 'Plaid provided secret key here'
+    #   PlaidHack.configure do |p|
+    #     p.client_id = 'PlaidHack provided client ID here'
+    #     p.secret = 'PlaidHack provided secret key here'
     #     p.env = :tartan
     #     p.read_timeout = 300   # it's 5 minutes, yay!
     #   end

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'plaid/version'
+require 'plaid-hack/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'plaid-legacy'
-  spec.version       = Plaid::VERSION
+  spec.version       = PlaidHack::VERSION
   spec.authors       = ['Oleg Dashevskii']
   spec.email         = ['olegdashevskii@gmail.com']
 
-  spec.summary       = 'Ruby bindings for Plaid\'s legacy API'
-  spec.description   = 'Ruby gem wrapper for the Plaid\'s legacy API. Read more at the ' \
-                       'homepage, the wiki, or in the Plaid documentation.'
+  spec.summary       = 'Ruby bindings for PlaidHack\'s legacy API'
+  spec.description   = 'Ruby gem wrapper for the PlaidHack\'s legacy API. Read more at the ' \
+                       'homepage, the wiki, or in the PlaidHack documentation.'
   spec.homepage      = 'https://github.com/plaid/plaid-ruby-legacy'
   spec.license       = 'MIT'
 
